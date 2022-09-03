@@ -9,14 +9,15 @@ import Foundation
 import Combine
 
 protocol ApiServiceProtocol {
-    func getPhotos() -> AnyPublisher<Photos, Error>
+    func getPhotos(earthDate: String, camera: String) -> AnyPublisher<Photos, Error>
 }
 
 class ApiService: ApiServiceProtocol {
-    let baseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2015-6-3&api_key=DEMO_KEY"
+    let baseUrl = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&"
     
-    func getPhotos() -> AnyPublisher<Photos, Error> {
-        let url = URL(string: baseUrl)!
+    func getPhotos(earthDate: String, camera: String) -> AnyPublisher<Photos, Error> {
+        let url = URL(string: baseUrl + "earth_date=" + earthDate + "&camera=" + camera)!
+        
         return URLSession.shared
             .dataTaskPublisher(for: url)
             .tryMap() { element -> Data in

@@ -1,20 +1,28 @@
 //
-//  PhotosViewModel.swift
+//  SearchViewModel.swift
 //  mars-by-curiosity
 //
-//  Created by Ekaterina Bulavina on 01.09.2022.
+//  Created by Ekaterina Bulavina on 02.09.2022.
 //
 
 import Foundation
 import Combine
 
-final class PhotosViewModel: ObservableObject {
+final class SearchViewModel: ObservableObject {
+    @Published var date = Date()
+    @Published var roverCamera = RoverCamerasList.FHAZ
     @Published var photos: [PhotoCard] = []
     
     private var disposables = Set<AnyCancellable>()
     
+    static func dateToString(_ date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd"
+        return dateFormatter.string(from: date)
+    }
+
     func fetchPhotos() {
-        service.getPhotos()
+        service.getPhotos(earthDate: SearchViewModel.dateToString(date), camera: roverCamera.rawValue)
             .sink { [weak self] complection in
                 switch complection {
                 case .failure(let error):

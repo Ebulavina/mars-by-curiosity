@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71828D7D28C1FD7200C92E57 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828D7C28C1FD7200C92E57 /* SearchView.swift */; };
+		71828D8228C2037800C92E57 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828D8128C2037800C92E57 /* SearchViewModel.swift */; };
+		71828D8428C3808400C92E57 /* RoverCamerasList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71828D8328C3808400C92E57 /* RoverCamerasList.swift */; };
 		71986E1828C11DE700B39C4C /* marsByCuriosityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E1728C11DE700B39C4C /* marsByCuriosityApp.swift */; };
 		71986E1C28C11DEA00B39C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71986E1B28C11DEA00B39C4C /* Assets.xcassets */; };
 		71986E1F28C11DEA00B39C4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71986E1E28C11DEA00B39C4C /* Preview Assets.xcassets */; };
@@ -14,13 +17,14 @@
 		71986E2C28C1207D00B39C4C /* PhotosItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E2B28C1207D00B39C4C /* PhotosItem.swift */; };
 		71986E2E28C122A400B39C4C /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E2D28C122A400B39C4C /* Camera.swift */; };
 		71986E3128C123AA00B39C4C /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E3028C123AA00B39C4C /* ApiService.swift */; };
-		71986E3328C1273600B39C4C /* PhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E3228C1273600B39C4C /* PhotosViewModel.swift */; };
 		71986E3528C127A700B39C4C /* PhotoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E3428C127A700B39C4C /* PhotoCard.swift */; };
-		71986E3828C12B1B00B39C4C /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71986E3728C12B1B00B39C4C /* PhotosView.swift */; };
 		71986E3B28C1F74700B39C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71986E3A28C1F74700B39C4C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71828D7C28C1FD7200C92E57 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		71828D8128C2037800C92E57 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		71828D8328C3808400C92E57 /* RoverCamerasList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverCamerasList.swift; sourceTree = "<group>"; };
 		71986E1428C11DE700B39C4C /* mars-by-curiosity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mars-by-curiosity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71986E1728C11DE700B39C4C /* marsByCuriosityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marsByCuriosityApp.swift; sourceTree = "<group>"; };
 		71986E1B28C11DEA00B39C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -29,9 +33,7 @@
 		71986E2B28C1207D00B39C4C /* PhotosItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosItem.swift; sourceTree = "<group>"; };
 		71986E2D28C122A400B39C4C /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		71986E3028C123AA00B39C4C /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
-		71986E3228C1273600B39C4C /* PhotosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewModel.swift; sourceTree = "<group>"; };
 		71986E3428C127A700B39C4C /* PhotoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCard.swift; sourceTree = "<group>"; };
-		71986E3728C12B1B00B39C4C /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
 		71986E3928C1F6B700B39C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		71986E3A28C1F74700B39C4C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +49,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71828D7E28C2033800C92E57 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				71828D7C28C1FD7200C92E57 /* SearchView.swift */,
+				71828D8128C2037800C92E57 /* SearchViewModel.swift */,
+				71828D8328C3808400C92E57 /* RoverCamerasList.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		71986E0B28C11DE700B39C4C = {
 			isa = PBXGroup;
 			children = (
@@ -67,14 +79,13 @@
 		71986E1628C11DE700B39C4C /* mars-by-curiosity */ = {
 			isa = PBXGroup;
 			children = (
+				71828D7E28C2033800C92E57 /* Search */,
 				71986E3928C1F6B700B39C4C /* Info.plist */,
 				71986E2F28C1238700B39C4C /* Network */,
 				71986E2528C11EDF00B39C4C /* Models */,
 				71986E1728C11DE700B39C4C /* marsByCuriosityApp.swift */,
 				71986E1B28C11DEA00B39C4C /* Assets.xcassets */,
 				71986E1D28C11DEA00B39C4C /* Preview Content */,
-				71986E3228C1273600B39C4C /* PhotosViewModel.swift */,
-				71986E3728C12B1B00B39C4C /* PhotosView.swift */,
 			);
 			path = "mars-by-curiosity";
 			sourceTree = "<group>";
@@ -185,11 +196,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71986E3328C1273600B39C4C /* PhotosViewModel.swift in Sources */,
+				71828D7D28C1FD7200C92E57 /* SearchView.swift in Sources */,
 				71986E2828C11F1D00B39C4C /* Photos.swift in Sources */,
 				71986E2E28C122A400B39C4C /* Camera.swift in Sources */,
 				71986E3128C123AA00B39C4C /* ApiService.swift in Sources */,
-				71986E3828C12B1B00B39C4C /* PhotosView.swift in Sources */,
+				71828D8228C2037800C92E57 /* SearchViewModel.swift in Sources */,
+				71828D8428C3808400C92E57 /* RoverCamerasList.swift in Sources */,
 				71986E1828C11DE700B39C4C /* marsByCuriosityApp.swift in Sources */,
 				71986E3528C127A700B39C4C /* PhotoCard.swift in Sources */,
 				71986E2C28C1207D00B39C4C /* PhotosItem.swift in Sources */,

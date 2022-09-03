@@ -11,7 +11,7 @@ import SwiftUI
 struct marsByCuriosityApp: App {
     var body: some Scene {
         WindowGroup {
-            PhotosView()
+            SearchView()
         }
     }
 }
